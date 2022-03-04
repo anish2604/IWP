@@ -1,3 +1,3 @@
 # IWP
 
-This repository contains the assessments for Internet and Web Programming course.
+This repository contains the Lab Assessments for Internet and Web Programming course.
