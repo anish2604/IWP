@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    background: url('bg.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+
+/* Home and Registration Page Stylesheet */
+.container {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 0.75rem;
+    -webkit-border-radius: 0.75rem;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048);
+    overflow: hidden;
+    width: calc(100vw - 65vw);
+    max-width: 100%;
+    margin: 8rem 0 4rem;
+}
+
+.header {    
+    background-color: rgb(4, 18, 24);
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.header h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form {
+    padding: 2.25rem;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.form-control label {
+    color: #F0F0F0;
+    font-size: 1.2rem;;
+    display: inline-block;
+    margin-bottom: 0.25rem;
+}
+
+.form-control input {
+    width: 100%;
+    font-size: 1.05rem;
+    border: 2px solid #F0F0F0;
+    border-radius: 0.25rem;
+    display: block;
+    padding: 0.75rem;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border: #777;
+}
+
+.form-control.success input {
+    border-color: #2ECC71;
+}
+
+.form-control.error input {
+    border-color: #E74C3C;
+}
+
+.form-control i {
+    position: absolute;
+    right: 0.75rem;
+    top: 2.75rem;
+    visibility: hidden;
+}
+
+.form-control.success i.fa-circle-check {
+    color: #2ECC71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-circle-exclamation {
+    color: #E74C3C;
+    visibility: visible;
+}
+
+.form-control small {
+    color: #E74C3C;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    font-size: 1rem;
+    visibility: visible;
+}
+
+.form .btn {
+    background-color: rgb(7, 110, 15);
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    display: block;
+    font-size: 1rem;
+    padding: 1rem 0;
+    margin-top: 1.25rem;
+    width: 40%;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.form .btn1 {
+    background-color: rgb(187, 160, 8);
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    display: block;
+    font-size: 1rem;
+    padding: 1rem 0;
+    margin-top: 1.25rem;
+    width: 40%;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.form .btn:hover,
+.form .btn1:hover,
+.form .links {
+    background-color: #F0F0F0;
+    color: rgb(4, 18, 24);
+}
+
+.form .links {
+    background-color: rgb(7, 110, 15);
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    display: block;
+    font-size: 1rem;
+    padding: 1rem 0;
+    margin-top: 1.25rem;
+    width: 40%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.logout {
+    background-color: rgb(44, 43, 40);
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    display: block;
+    font-size: 1rem;
+    padding: 1rem 0;
+    margin-top: 1.25rem;
+    margin-left: 1rem;
+    width: 10%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.buttons {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.flex-container {
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.swal-icon{
+    overflow: hidden !important;
+}
+
+.info {
+    color: #c2a60b;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.home-button {
+    position: absolute;
+    top: 0;
+    margin: 2rem auto;
+    font-size: 2rem;
+    color: #000;
+    background-color: #fff;
+    padding: 0.6rem;
+    border-radius: 50%;
+}
+
+/* Media Queries */
+@media(max-width: 998px) {
+    .container {
+        width: calc(100vw - 35vw);
+        max-width: 100%;
+    }
+}
+
+
+/* ScrollBar */
+::-webkit-scrollbar {
+    width: 10px;
+    background: #f1f0ee;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(32, 32, 32);
+    border-radius: 10px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h2 {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+}
+h2 small {
+    font-size: 0.5em;
+}
+
+.responsive-table li {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.responsive-table .table-header {
+    background-color: #95a5a6;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+.responsive-table .table-row {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+.responsive-table .col-1 {
+    flex-basis: 10%;
+}
+.responsive-table .col-2 {
+    flex-basis: 40%;
+}
+.responsive-table .col-3 {
+    flex-basis: 25%;
+}
+.responsive-table .col-4 {
+    flex-basis: 25%;
+}
+@media all and (max-width: 767px) {
+    .responsive-table .table-header {
+        display: none;
+    }
+    .responsive-table li {
+        display: block;
+    }
+    .responsive-table .col {
+        flex-basis: 100%;
+    }
+    .responsive-table .col {
+        display: flex;
+        padding: 10px 0;
+    }
+    .responsive-table .col:before {
+        color: #6c7a89;
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: right;
+    }
+}
