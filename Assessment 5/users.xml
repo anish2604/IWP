@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="users.xsl"?>
+<users>
+  <user>
+    <name>Anish Kumar</name>
+    <email>anishkumar@gmail.com</email>
+    <phone>8792489212</phone>
+    <age>20</age>
+    <password>AnishK#123</password>
+  </user>
+  <user>
+    <name>Siddharth Singh</name>
+    <email>sid.singh19@gmail.com</email>
+    <phone>6214871243</phone>
+    <age>25</age>
+    <password>Sid123#</password>
+  </user>
+  <user>
+    <name>Dev Sharma</name>
+    <email>dev.sharma23@gmail.com</email>
+    <phone>8787129312</phone>
+    <age>21</age>
+    <password>Dev12345</password>
+  </user>
+  <user>
+    <name>Ayan Chattaraj</name>
+    <email>ayanchattaraj2002@gmail.com</email>
+    <phone>7363959263</phone>
+    <age>20</age>
+    <password>Ayan123#</password>
+  </user>
+  <user>
+    <name>Anish Chattaraj</name>
+    <email>anishchattaraj2001@gmail.com</email>
+    <phone>7363959262</phone>
+    <age>22</age>
+    <password>Anish123#</password>
+  </user>
+</users>
